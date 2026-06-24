@@ -8,7 +8,7 @@ turns truth into a merge decision stable enough that teams won't disable it.
 
 - **A signal is a scored answer to one question.** Four signals cover most agents:
   `answer_quality` (from the judge aggregate), `tool_correctness` (mean of the trajectory
-  + tool-call aggregates), `cost`, and `latency` (both normalized from trace stats so
+  - tool-call aggregates), `cost`, and `latency` (both normalized from trace stats so
   *lower is better* maps to a `0.0–1.0` score where higher passes). Each has an absolute
   threshold.
 - **Two ways to fail, both enforced.** The gate fails on an **absolute** breach (a signal
